@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Registrasi Seminar</title>
+</head>
+<body>
+
+<header>
+    <h1>Sistem Registrasi Seminar Sistem Informasi</h1>
+    <p>Program Studi Sistem Informasi</p>
+    <p>Selamat datang di halaman pendaftaran Seminar Teknologi Informasi.</p>
+</header>
+
+<nav>
+    <a href="#informasi">Informasi Seminar</a> |
+    <a href="#formulir">Formulir Pendaftaran</a> |
+    <a href="#peserta">Daftar Peserta</a>
+</nav>
+
+<hr>
+
+<section id="informasi">
+    <h2>Informasi Seminar</h2>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Informasi Kegiatan Seminar</th>
+        </tr>
+        <tr>
+            <td>Nama Seminar</td>
+            <td>Seminar Teknologi Informasi</td>
+        </tr>
+        <tr>
+            <td>Tanggal</td>
+            <td>20 Desember 2026</td>
+        </tr>
+        <tr>
+            <td>Waktu</td>
+            <td>09.00 - 12.00 WIB</td>
+        </tr>
+        <tr>
+            <td>Tempat</td>
+            <td>Aula Kampus</td>
+        </tr>
+        <tr>
+            <td>Narasumber</td>
+            <td>Ahli Teknologi Informasi</td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="formulir">
+    <h2>Formulir Pendaftaran</h2>
+
+    <form action="" method="get">
+
+        <fieldset>
+            <legend>Data Pribadi</legend>
+
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama"
+            placeholder="Masukkan nama lengkap" required>
+            <br><br>
+
+            <label for="npm">NPM:</label><br>
+            <input type="text" id="npm" name="npm"
+            placeholder="Masukkan NPM" required>
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+            placeholder="Masukkan email" required>
+            <br><br>
+
+            <label for="wa">Nomor WhatsApp:</label><br>
+            <input type="tel" id="wa" name="wa"
+            placeholder="Masukkan nomor WhatsApp" required>
+            <br><br>
+
+            <label for="tanggal">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+            <br><br>
+
+            Jenis Kelamin:<br>
+            <input type="radio" id="laki" name="jk"
+            value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+
+            <input type="radio" id="perempuan" name="jk"
+            value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Data Kegiatan</legend>
+
+            <label for="prodi">Program Studi:</label><br>
+            <select id="prodi" name="prodi" required>
+                <option value="">Pilih Program Studi</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Manajemen">Manajemen</option>
+            </select>
+            <br><br>
+
+            <label for="semester">Semester:</label><br>
+            <input type="number" id="semester" name="semester"
+            min="1" max="14" required>
+            <br><br>
+
+            Topik Seminar:<br>
+            <input type="checkbox" id="ai" name="topik"
+            value="Artificial Intelligence">
+            <label for="ai">Artificial Intelligence</label><br>
+
+            <input type="checkbox" id="jaringan" name="topik"
+            value="Jaringan Komputer">
+            <label for="jaringan">Jaringan Komputer</label><br>
+
+            <input type="checkbox" id="keamanan" name="topik"
+            value="Keamanan Siber">
+            <label for="keamanan">Keamanan Siber</label>
+            <br><br>
+
+            <label for="alasan">Alasan Mengikuti Seminar:</label><br>
+            <textarea id="alasan" name="alasan"
+            rows="4" cols="40"
+            placeholder="Tuliskan alasan Anda"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="setuju"
+            name="persetujuan" value="Setuju" required>
+            <label for="setuju">Saya menyetujui ketentuan pendaftaran.</label>
+            <br><br>
+
+            <button type="submit">Daftar</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</section>
+
+<hr>
+
+<section id="peserta">
+    <h2>Daftar Peserta Seminar</h2>
+
+    <table border="1">
+        <caption>Data Peserta Seminar</caption>
+
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama Peserta</th>
+                <th>NPM</th>
+                <th>Program Studi</th>
+                <th>Semester</th>
+                <th>Jenis Kelamin</th>
+                <th>Status Pendaftaran</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Desy Rahma</td>
+                <td>2503100229</td>
+                <td rowspan="2">Sistem Informasi</td>
+                <td>3</td>
+                <td>Perempuan</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Rini Yanti</td>
+                <td>2503100230</td>
+                <td>3</td>
+                <td>Perempuan</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Putri Yani</td>
+                <td>2503100231</td>
+                <td>Manajemen</td>
+                <td>3</td>
+                <td>Perempuan</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Andi Saputra</td>
+                <td>2503100232</td>
+                <td>Teknik Informatika</td>
+                <td>3</td>
+                <td>Laki-laki</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Budi Santoso</td>
+                <td>2503100233</td>
+                <td>Manajemen</td>
+                <td>3</td>
+                <td>Laki-laki</td>
+                <td>Terdaftar</td>
+            </tr>
+
+            <tr>
+                <td colspan="7">
+                    Jumlah Peserta: 5 Orang
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<footer>
+    <h3>Identitas Pembuat</h3>
+    <p>Nama: Nur Azizah Hasibuan</p>
+    <p>NPM: 2503100242</p>
+    <p>Mata Kuliah: Pemrograman Web 1</p>
+    <p>Institusi: ITS PALUTA</p>
+</footer>
+
+</body>
+</html>
